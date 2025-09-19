@@ -1,0 +1,13 @@
+.nav-section{
+    border: 1px px solid blueviolet;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-section ul li{
+    list-style-type:none;
+    display: inline-flex;
+    margin:10px;
+    font-size: 2rem;
+    color :black
+}

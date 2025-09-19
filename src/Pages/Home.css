@@ -1,0 +1,55 @@
+/* ===== Input Field Styling ===== */
+.form {
+  width: 100%;                  /* Takes up full width of its container */
+  max-width: 400px;             /* But not more than 400px for better readability */
+  padding: 12px 16px;           /* Space inside input: 12px top/bottom, 16px left/right */
+  font-size: 16px;              /* Text size inside input */
+  border: 1px solid #ccc;       /* Light gray border */
+  border-radius: 8px;           /* Rounded corners */
+  outline: none;                /* Removes default browser outline when input is focused */
+  transition: border-color 0.3s ease; /* Smooth transition for border when it changes */
+}
+
+/* ===== Input Field Focus Effect ===== */
+.form:focus {
+  border-color: #007bff;                    /* Blue border when input is focused */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Blue glow around input */
+}
+
+/* ===== Container Styling ===== */
+.form-container {
+  margin: 20px auto;         /* 20px space on top/bottom, center horizontally */
+  text-align: center;        /* Center-aligns the contents inside this div */
+}
+
+/* ===== Responsive Style for Mobile Devices ===== */
+@media (max-width: 600px) {
+  .form {
+    width: 90%;              /* Make the input field take up 90% of screen width */
+    font-size: 14px;         /* Slightly smaller text for better fit on small screens */
+  }
+}
+
+/* ===== Proceed Button Styling ===== */
+.proceed-button {
+  margin-top: 16px;                    /* Adds space above the button */
+  padding: 12px 24px;                  /* Makes the button bigger and easier to click */
+  font-size: 16px;                     /* Text size */
+  font-weight: 600;                    /* Bold text for visibility */
+  background-color: #007bff;          /* Blue background */
+  color: white;                        /* White text */
+  border: none;                        /* No default border */
+  border-radius: 8px;                 /* Rounded corners to match input */
+  cursor: pointer;                     /* Cursor becomes a hand on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover/click animation */
+}
+
+/* ===== Hover Effect for Button ===== */
+.proceed-button:hover {
+  background-color: #0056b3;           /* Darker blue when hovered */
+}
+
+/* ===== Click (Active) Effect ===== */
+.proceed-button:active {
+  transform: scale(0.97);              /* Slightly shrinks the button on click */
+}
